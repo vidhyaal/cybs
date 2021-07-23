@@ -44,9 +44,9 @@
     </div>
   </body>
   <script>
-	  window.onLoad(){
-		  document.getElementById('shopping').submit();
-	  }
+	 window.onload = function(){
+  document.forms['shopping'].submit();
+}
 	</script>
 </HTML>
 <?php
