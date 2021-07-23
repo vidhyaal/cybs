@@ -215,10 +215,16 @@ var cart = {
     //In case of iFrame Checkout
     //document.getElementById("shopping").submit();
     var iframe= document.createElement('iframe');
+    iframe.id='payFrame';
     iframe.src= 'payment_confirmation.php';
     iframe.width=iframe.height= '100%';
     document.getElementById('iFrameDisplay').appendChild(iframe);
-     // document.getElementById("shopping").submit();
+      //document.getElementById("shopping").submit();
+	  
+var MyIFrame = document.getElementById("payFrame");
+var MyIFrameDoc = (MyIFrame.contentWindow || MyIFrame.contentDocument);
+if (MyIFrameDoc.document) MyIFrameDoc = MyIFrameDoc.document;
+MyIFrameDoc.getElementById("shopping").submit();
   //document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
   //In case of hosted Checkout uncomment the below line
