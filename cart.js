@@ -212,16 +212,16 @@ var cart = {
     // PAYMENT
     // WHATEVER IS REQUIRED
 
-    //In case of hosted Checkout uncomment the below line
+    //In case of iFrame Checkout
     //document.getElementById("shopping").submit();
     var iframe= document.createElement('iframe');
     iframe.src= 'payment_form.php';
     iframe.width=iframe.height= '100%';
     document.getElementById('iFrameDisplay').appendChild(iframe);
-      document.getElementById("shopping").submit();
+     // document.getElementById("shopping").submit();
   //document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
-  
+  //In case of hosted Checkout uncomment the below line
 //  alert(document.forms['shopping']['amt'].value);
 //      location.href='payment_form.php';
 //    document.getElementById("shopping").submit();
