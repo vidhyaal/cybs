@@ -43,11 +43,11 @@
 
     </div>
   </body>
-  <script>
+<!--   <script>
 	 window.onload = function(){
   document.shopping.submit();
 }
-	</script>
+	</script> -->
 </HTML>
 <?php
 ?>
