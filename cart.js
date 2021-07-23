@@ -224,7 +224,7 @@ var cart = {
 var MyIFrame = document.getElementById("payFrame");
 var MyIFrameDoc = (MyIFrame.contentWindow || MyIFrame.contentDocument);
 if (MyIFrameDoc.document) MyIFrameDoc = MyIFrameDoc.document;
-MyIFrameDoc.getElementById("shopping").submit();
+MyIFrameDoc.getElementById("mybutton").click();
   //document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
   //In case of hosted Checkout uncomment the below line
