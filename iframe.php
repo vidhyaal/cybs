@@ -18,7 +18,7 @@
       <!-- (C) CURRENT CART -->
       <div id="cart-items"></div>
       <div id="iFrameDisplay">
-      <form name="shopping" method="post" id="shopping" action="payment_confirmation.php">
+      <form name="shopping" method="post" id="shopping" action="payment_form.php">
              <input type="hidden" name="access_key" value="23879b2b57323605932e40d2884de6d2">
               <input type="hidden" name="profile_id" value="488DF726-70E4-4690-8627-FAF66FB44E18">
               <input type="hidden" name="transaction_uuid" value="<?php echo uniqid() ?>">
