@@ -213,12 +213,12 @@ var cart = {
     // WHATEVER IS REQUIRED
 
     //In case of hosted Checkout uncomment the below line
-    document.getElementById("shopping").submit();
+    //document.getElementById("shopping").submit();
     var iframe= document.createElement('iframe');
-    iframe.src= 'payment_confirmation.php';
+    iframe.src= 'payment_form.php';
     iframe.width=iframe.height= '100%';
     document.getElementById('iFrameDisplay').appendChild(iframe);
-   
+      document.getElementById("shopping").submit();
   //document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
   
