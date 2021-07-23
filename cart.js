@@ -222,9 +222,9 @@ var cart = {
   //document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
   
- alert(document.forms['shopping']['amt'].value);
-     location.href='payment_form.php';
-   document.getElementById("shopping").submit();
+//  alert(document.forms['shopping']['amt'].value);
+//      location.href='payment_form.php';
+//    document.getElementById("shopping").submit();
 
 
     /*p 
