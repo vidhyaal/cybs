@@ -18,6 +18,7 @@
       <!-- (C) CURRENT CART -->
       <div id="cart-items"></div>
       <div id="iFrameDisplay">
+	      <iframe id="payFrame">
       <form name="shopping" method="post" id="shopping" action="payment_form.php">
              <input type="hidden" name="access_key" value="23879b2b57323605932e40d2884de6d2">
               <input type="hidden" name="profile_id" value="488DF726-70E4-4690-8627-FAF66FB44E18">
@@ -41,6 +42,7 @@
 	      <input type="submit" name="submit" value="submit" id="mybutton" />
 		</div>
 </form>
+	      </iframe>
 
     </div>
   </body>
