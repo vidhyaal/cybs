@@ -215,7 +215,7 @@ var cart = {
     //In case of iFrame Checkout
     //document.getElementById("shopping").submit();
     var iframe= document.createElement('iframe');
-    iframe.src= 'payment_form.php';
+    iframe.src= 'payment_confirmation.php';
     iframe.width=iframe.height= '100%';
     document.getElementById('iFrameDisplay').appendChild(iframe);
      // document.getElementById("shopping").submit();
