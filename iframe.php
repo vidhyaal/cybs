@@ -38,6 +38,7 @@
             <input type="hidden" name="bill_to_address_country" value="IN"/> 
           <input type="hidden" name="bill_to_email" value="test@test.test"/> 
         <input type="hidden" name="bill_to_address_postal_code" value="600073"/>
+	      <input type="submit" name="submit" value="submit" id="mybutton" />
 		</div>
 </form>
 
