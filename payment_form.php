@@ -6,7 +6,7 @@
     <script type="text/javascript" src="jquery-1.7.min.js"></script>
     <link rel="stylesheet" type="text/css" href="payment.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="cart.js"></script>
+<!--     <script src="cart.js"></script> -->
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
