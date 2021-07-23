@@ -219,7 +219,7 @@ var cart = {
     // iframe.width=iframe.height= '100%';
     // document.getElementById('iFrameDisplay').appendChild(iframe);
    
- // document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
+  document.getElementById("iFrameDisplay").innerHTML = '<iframe src="payment_form.php" name="payment"  width="100%" height="100%"></iframe>';
   
   
  alert(document.forms['shopping']['amt'].value);
