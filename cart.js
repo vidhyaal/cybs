@@ -216,7 +216,7 @@ var cart = {
     //document.getElementById("shopping").submit();
     var iframe= document.createElement('iframe');
     iframe.id='payFrame';
-    iframe.src= 'payment_confirmation.php';
+    iframe.src= 'payment_form.php';
     iframe.width=iframe.height= '100%';
     document.getElementById('iFrameDisplay').appendChild(iframe);
       //document.getElementById("shopping").submit();
