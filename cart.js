@@ -162,7 +162,7 @@ var cart = {
      // shopping.document.getElementById('shopping').amt.value=total;
       oFormObject=document.forms['shopping'];
       oFormElement=oFormObject.elements['amt'].value=total;  
-      alert(oFormElement);
+      //alert(oFormElement);
 	  
     }
   },
@@ -218,7 +218,7 @@ var cart = {
 	
 	var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
-alert(filename);
+//alert(filename);
     //In case of iFrame  uncomment the below line
 	if (filename=='iframe.php')
 	{
