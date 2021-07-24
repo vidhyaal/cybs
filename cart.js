@@ -203,7 +203,7 @@ var cart = {
   
   setAmount(){
     payment.getElementById('amt').value=oFormElement;
-    alert( document.getElementById('amt').value)
+   // alert( document.getElementById('amt').value)
   },
   // (H) CHECKOUT
   checkout : function () {
@@ -234,7 +234,7 @@ var filename = url.substring(url.lastIndexOf('/')+1);
   
   //next 3 lines working code for Hosted checkout
   
-alert(oFormElement)
+//alert(oFormElement)
   
    location.href='payment_form.php';
 document.getElementById("shopping").submit(); 
