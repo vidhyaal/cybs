@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <input type="submit" class="btn btn-sm btn-success float-right" type="submit" value='pay'>
+                    <input type="submit" class="btn btn-sm btn-success float-right" type="submit" value='PAY'>
                         <!--i class="mdi mdi-gamepad-circle"></i> Continue</button-->
                 </div>
             </div>
