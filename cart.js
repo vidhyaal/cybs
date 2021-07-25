@@ -162,7 +162,7 @@ var cart = {
      // shopping.document.getElementById('shopping').amt.value=total;
       oFormObject=document.forms['shopping'];
       oFormElement=oFormObject.elements['amt'].value=total;  
-      //alert(oFormElement);
+   //   alert(oFormElement);
 	  
     }
   },
@@ -234,10 +234,19 @@ var filename = url.substring(url.lastIndexOf('/')+1);
   
   //next 3 lines working code for Hosted checkout
   
-//alert(oFormElement)
+
   
    location.href='payment_form.php';
 document.getElementById("shopping").submit(); 
+   }
+   else if (filename=='checkout.php' )
+   {
+	   
+    
+    document.getElementById('submit').click();
+  //Display CC form
+ // document.getElementById('UnsignedDataSection').style.visibility='visible';
+ 
    }
     /*p 
     var data = new FormData();
