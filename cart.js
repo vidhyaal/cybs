@@ -162,7 +162,7 @@ var cart = {
      // shopping.document.getElementById('shopping').amt.value=total;
       oFormObject=document.forms['shopping'];
       oFormElement=oFormObject.elements['amt'].value=total;  
-      alert(oFormElement);
+   //   alert(oFormElement);
 	  
     }
   },
@@ -203,7 +203,7 @@ var cart = {
   
   setAmount(){
     payment.getElementById('amt').value=oFormElement;
-    alert( document.getElementById('amt').value)
+   // alert( document.getElementById('amt').value)
   },
   // (H) CHECKOUT
   checkout : function () {
@@ -218,7 +218,7 @@ var cart = {
 	
 	var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
-alert(filename);
+//alert(filename);
     //In case of iFrame  uncomment the below line
 	if (filename=='iframe.php')
 	{
@@ -234,10 +234,19 @@ alert(filename);
   
   //next 3 lines working code for Hosted checkout
   
-alert(oFormElement)
+
   
    location.href='payment_form.php';
 document.getElementById("shopping").submit(); 
+   }
+   else if (filename=='checkout.php' )
+   {
+	   
+    
+    document.getElementById('submit').click();
+  //Display CC form
+ // document.getElementById('UnsignedDataSection').style.visibility='visible';
+ 
    }
     /*p 
     var data = new FormData();

@@ -32,14 +32,14 @@ function addLinkToSetDefaults() {
         $(this).append(newlink);
     });
 
-    newbutton = $(document.createElement("input"));
+    /* newbutton = $(document.createElement("input"));
     newbutton.attr({
         id:'defaultAll', value:'Default All', type:'button', onClick:'setDefaultsForAll()'
     });
     newbutton.bind('click', function() {
         setDefaultsForAll;
     });
-    $("#"+payment_form).append(newbutton);
+    $("#"+payment_form).append(newbutton); */
 }
 
 function capitalize(string) {
