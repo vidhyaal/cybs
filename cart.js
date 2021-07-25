@@ -23,7 +23,9 @@ var cart = {
       cart.items = {};
       localStorage.removeItem("cart");
       cart.list();
+	   if (document.getElementById('iFrameDisplay'){
 	  document.getElementById('iFrameDisplay').innerHTML='';
+    }
     }
   },
 
