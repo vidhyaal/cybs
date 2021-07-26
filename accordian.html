@@ -5,41 +5,41 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      </head>
-    <body style="text-align:center">
-      <div class="panel-group ">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse1">Cybersource Integration Methods Demo</a>
-            </h4>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse"></div>
-            <a data-toggle="collapse" href="#collapse2"><div class="panel-body">Secure Acceptace</div></a>
-          </div>
-          <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body"> <a href="iframe.php">iFrame</a></div>
-            <div class="panel-body"><a href="index.php">Hosted Checkout</a></div>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse"></div>
-          <a data-toggle="collapse"><div class="panel-body"><a href="checkout.php">Checkout API</a></div></a>
+        <style>
+        .custom {
+    width: 250px !important;
+    background-color:#f7b600;
+    text-color:#fff;
+    margin-top:10px;
 
-          <div id="collapse1" class="panel-collapse collapse"></div>
-          <a data-toggle="collapse" href="#collapse4"><div class="panel-body">Simple Order API</div></a>
-        </div>
-        <div id="collapse4" class="panel-collapse collapse">
-          <div class="panel-body">Payment Authentication</div>
-          <div class="panel-body">Payment Authentication RuPay</div>
-          <div class="panel-body">Verification Service</div>
-          <div class="panel-body">Apple Pay</div>
-          <div class="panel-body">Google Pay</div>
-          <div class="panel-body">Samsung Pay</div>
-          <div class="panel-body">Chase Pay</div>
-          <div class="panel-body">MasterPass</div>
-          <div class="panel-body">Recurring Billing</div>
-        </div>
-        </div>
-            <div class="panel-footer">Panel Footer</div>
+}
+body.h2 {
+  background-color:#1a1af71!important;
+  text-color:#fff!important;
+}
+</style>  
+      </head>
+    <body><center>
+      <div class="container row col-sm-8">
+      
+        <h2 style="font-color:white;background-color:#1a1af71 !important">Cybersource Integration Methods </h2>
+        
+            <div class="row sm-col-4">
+              <div class="row sm-col-4">  
+            <a href="index.php"><button type="button" class="btn  btn-small custom">Hosted Checkout</button></a>
+            </div>
+             <div class="row sm-col-4">  
+            <a href="iframe.php"><button type="button" class="btn  btn-small custom">iFrame Implementation</button></a>
+            </div>
+             <div class="row sm-col-4">  
+           <a href="checkout.php">  <button type="button" class="btn  btn-small custom">Checkout API - Sient POST</button></a>
+            </div>
+             <div class="row sm-col-4">  
+            <button type="button" class="btn  btn-small custom">Simple Order APi</button>
+            </div>
+             <div class="row sm-col-4">  
+            <button type="button" class="btn  btn-small custom">REST APIs</button>
+             </div>
           </div>
         </div>
       </div>
