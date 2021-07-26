@@ -68,7 +68,7 @@
 </style>
 </head>
 <body>
-<form id="payment_confirmation" action="https://testsecureacceptance.cybersource.com/silent/pay" method="post">
+<form id="payment_confirmation" action="https://testsecureacceptance.cybersource.com/silent/embedded/pay" method="post">
 <?php
     foreach($_REQUEST as $name => $value) {
         $params[$name] = $value;
