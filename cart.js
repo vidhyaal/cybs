@@ -227,7 +227,8 @@ var filename = url.substring(url.lastIndexOf('/')+1);
      var iframe= document.createElement('iframe');
      iframe.src= 'payment_form.php?amt='+oFormElement;
      iframe.width=iframe.height= '100%';
-     document.getElementById('iFrameDisplay').appendChild(iframe); 
+     iframe.border='0px';
+     document.getElementById('cart-items').appendChild(iframe); 
 	}
 	
    else if (filename=='index.php' || filename =='')
