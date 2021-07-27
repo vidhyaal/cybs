@@ -46,8 +46,9 @@
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: #f0f3f5;
-    border-bottom: 1px solid #c8ced3
+    background-color: #090249;
+    border-bottom: 1px solid #c8ced3;
+    color:#ffffff;
 }
 
 .card-body {
@@ -64,6 +65,16 @@
 }
 .card-footer{
     padding:0 10px 10px 15px;
+}
+
+.payBtn {
+    font-weight:bold;
+    font-size:1em;
+    padding: 10px;
+    border: none;
+    color:#fff;
+    background:#090249;
+    cursor:pointer;
 }
 </style>
 </head>
@@ -128,7 +139,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <input type="submit" class="btn btn-sm btn-success float-right" type="submit" value='PAY'>
+                    <input type="submit" class="payBtn float-right" type="submit" value='Pay Now'>
                         <!--i class="mdi mdi-gamepad-circle"></i> Continue</button-->
                 </div>
             </div>
