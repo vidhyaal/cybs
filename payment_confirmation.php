@@ -1,4 +1,8 @@
-<?php include 'security.php' ?>
+<?php
+
+include 'security.php'
+
+?>
 
 <html>
 <head>
@@ -14,31 +18,53 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form id="payment_confirmation" action="https://testsecureacceptance.cybersource.com/pay" method="post"/>
+<form id="payment_confirmation"  name="payment_confirmation"  method="post">
 <?php
     foreach($_REQUEST as $name => $value) {
         $params[$name] = $value;
     }
 ?>
 <fieldset id="confirmation">
-    <legend>Review Payment Details</legend>
+   
     <div>
         <?php
             foreach($params as $name => $value) {
-                echo "<div>";
-                echo "<span class=\"fieldName\">" . $name . "</span><span class=\"fieldValue\">" . $value . "</span>";
-                echo "</div>\n";
+                 "<div>";
+                 "<span class=\"fieldName\">" . $name . "</span><span class=\"fieldValue\">" . $value . "</span>";
+                 "</div>\n";
             }
         ?>
     </div>
 </fieldset>
     <?php
         foreach($params as $name => $value) {
-            echo "<input type=\"hidden\" id=\"" . $name . "\" name=\"" . $name . "\" value=\"" . $value . "\"/>\n";
+       echo  "<input type=\"hidden\" id=\"" . $name . "\" name=\"" . $name . "\" value=\"" . $value . "\"/>\n";
         }
-        echo "<input type=\"hidden\" id=\"signature\" name=\"signature\" value=\"" . sign($params) . "\"/>\n";
+      echo   "<input type=\"hidden\" id=\"signature\" name=\"signature\" value=\"" . sign($params) . "\"/>\n";
     ?>
-<input type="submit" id="submit" value="Confirm"/>
+<input type="submit" id="submit.x" value="Confirm" style='visibility:hidden'/>
 </form>
+<script>
+
+
+
+
+    window.onload=function(){
+
+    var ele=  document.payment_confirmation.pgType;
+    alert(ele.value)
+
+    if (ele.value=='i'){
+      
+      document.payment_confirmation.action = "https://testsecureacceptance.cybersource.com/embedded/pay";
+    }
+    else{
+    
+        document.payment_confirmation.action = "https://testsecureacceptance.cybersource.com/pay";
+    }
+
+       document.payment_confirmation.submit();
+    }
+    </script>
 </body>
 </html>
