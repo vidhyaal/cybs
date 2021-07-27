@@ -24,7 +24,7 @@
 .card {
     margin-bottom: 1.5rem
 }
-
+	      label {float:left;}
 .card {
     position: relative;
     display: -ms-flexbox;
