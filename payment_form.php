@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Secure Acceptance - Payment Form Example</title>
@@ -36,13 +37,16 @@
             <input type="hidden" name="bill_to_address_country" value="IN"/> 
           <input type="hidden" name="bill_to_email" value="test@test.test"/> 
         <input type="hidden" name="bill_to_address_postal_code" value="600073"/>
+        <input type="hidden" name="pgType" value="x"/>
 </form>
 <script>
 	window.onload=function(){
 		var qString = location.search;
+   
   if (qString.indexOf('amt') != -1) {
      var data = qString.substring(qString.indexOf('=') + 1, qString.length);
      document.forms[0].amt.value = data;
+     document.forms[0].pgType.value='i';
     }
 		document.shopping.submit();
 	}	
